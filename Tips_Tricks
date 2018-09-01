@@ -1,0 +1,2 @@
+- GPU OOM exhausted memory: - reduce batch size 512 - 256, kill -9 pid []  nvidia-smi
+
