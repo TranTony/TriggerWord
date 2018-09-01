@@ -12,7 +12,10 @@ CNN for trigger words.
 
 My solution is developed from the solution of Cardente in here, but I found his CNN architecture is able to improve. The solution of Cardente is quite similar to the approach of Andrew Ng’s team in the course 5 of Deep Learning Specialization on Coursera: a CNN goes with an RNN.  According to John, the architecture accomplishes 80.8% accuracy with the input data transformed Mel Frequency Cepstral Coefficients. I found that in his architecture need fine tune some hyperparameters. By experience, I would like to adapt his CNN net to a very deep CNN net by “twisting” MFCC features with more hidden layers. My design was described details in here named Very Deep CNN 6 (Vd6):
  
- 
+![alt text](https://github.com/TranTony/TriggerWord/blob/master/CNN.png)
+
+
+
 According to many research papers, a CNN model manifests better results if we do “twist” the network with deeper hidden layers. This is help us obtain a better accuracy while trading off by the running time. In my experience, the architecture of Vd6 has touched the accuracy limitation. I have expanded the number of layers with Vd9 or Vd10 but the obtained results just shrinker with a little rate of 0.05%. That is the reason why Vd6 is the best option which satisfies both the running speed and the accuracy of the system.
 
 In practical, entertainment domain accepts an accuracy of 90% and the response time in 3 seconds. While the accuracy is enough to keep at this rate, I would like to enhance the model by handling an exceptional case called: non-voice detection.
