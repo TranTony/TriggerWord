@@ -1,6 +1,6 @@
 'learningRates': [0.001,0.0001]
 'numEpochs': [20,10]
-'batchSize': 256  
+'batchSize': 128  
 'sampRate': 16000
 'numSamples': 16000
 'trainLimitInput': 0
